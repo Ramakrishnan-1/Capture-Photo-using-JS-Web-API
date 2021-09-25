@@ -1,0 +1,39 @@
+#start-camera {
+    margin-top: 50px;
+}
+
+#video {
+    display: none;
+    width: 100%;
+}
+
+#click-photo {
+    display: none;
+}
+
+#dataurl-container {
+    display: none;
+}
+
+#canvas {
+    display: block;
+    width: 100%;
+}
+
+#dataurl-header {
+    text-align: center;
+    font-size: 15px;
+}
+
+#fileName{
+    display: none;
+    width: 30%;
+}
+#downloadID{
+    display: none;
+}
+
+#resetBtn{
+    margin: 10px 20px 0px 20px;
+    display: none;
+}

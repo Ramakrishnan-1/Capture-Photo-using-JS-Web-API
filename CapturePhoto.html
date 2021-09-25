@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Demo - Capture Photo From Webcam Using Javascript</title>
+<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <div class="container p-3 my-3">
+        <div class="row">
+            <h3>Capture Photo using JavaScript Web API</h3>    
+            <button class="btn btn-primary" id="start-camera"><i class="fas fa-camera"></i> Start Camera</button>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-5">
+                <video id="video" autoplay></video>
+            </div>
+            <div class="col-lg-2 justify-content-center">
+                <button class="btn btn-primary" id="click-photo"><i class="fas fa-camera-retro"></i> Click Photo </button>
+                <button class="btn btn-secondary" id="resetBtn"><i class="fas fa-sync-alt"></i> Reset </button>
+            </div>
+            <div class="col-lg-5" id="dataurl-container">
+                <canvas id="canvas" width="420" height="240"></canvas>
+            </div>
+        </div>  
+        <div class="row justify-content-end p-3" id="downloadDIV">
+            <input class="form-control" type="text" id="fileName" placeholder="Enter File Name">
+            <a class="btn btn-link" id="downloadID">Download</a>
+        </div>      
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
