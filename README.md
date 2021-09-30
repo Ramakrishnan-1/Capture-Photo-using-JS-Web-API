@@ -1,2 +1,3 @@
 # Capture-Photo-using-JS-Web-API
-Capture photos and download using JavaScript Web API
+
+<img src="" alt="Screenshot" width="150" height="100" />
